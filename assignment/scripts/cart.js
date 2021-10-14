@@ -6,7 +6,11 @@ console.log(`basket is ${basket}`);
 
 function addItem(item) {
   basket.push(item);
+  if (isFull) {
     return true;
+  } else {
+    return false;
+  };
 };//End Function
 console.log('Adding grapes', addItem('grapes'));
 console.log(`basket is now ${basket}`);
@@ -26,6 +30,7 @@ function empty(arr) {
 };//End Function
 console.log(empty(basket));
 console.log(basket);
+
 
 //STRETCH
 
