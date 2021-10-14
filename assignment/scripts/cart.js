@@ -12,8 +12,9 @@ console.log('Adding grapes', addItem('grapes'));
 console.log(`basket is now ${basket}`);
 
 function listItems(arr) {
-  for (let i = 0; i <= arr.length; i++) {
+  for (let i = 0; i <= arr.length-1; i++) {
     arr[i];
+    console.log(arr[i]);
   };//End For
 };//End Function
 console.log('Adding apples', addItem('apples'));
@@ -25,3 +26,16 @@ function empty(arr) {
 };//End Function
 console.log(empty(basket));
 console.log(basket);
+
+//STRETCH
+
+const maxItems = 5;
+
+function isFull(arr) {
+  if (arr < maxItems) {
+    return false;
+  } else {
+    return true;
+  }
+};//End Function
+console.log(isFull(basket));
