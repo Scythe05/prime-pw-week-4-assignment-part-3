@@ -23,12 +23,13 @@ function listItems(arr) {
 };//End Function
 console.log('Adding apples', addItem('apples'));
 console.log(`basket is now ${basket}`);
-console.log(listItems(basket));
+console.log('The listed items are');
+listItems(basket);
 
 function empty(arr) {
   arr.splice(0, arr.length);
 };//End Function
-console.log(empty(basket));
+console.log('This basket is now empty', empty(basket));
 console.log(basket);
 
 
@@ -43,4 +44,4 @@ function isFull(arr) {
     return true;
   }
 };//End Function
-console.log(isFull(basket));
+console.log('Is the basket full?', isFull(basket));
