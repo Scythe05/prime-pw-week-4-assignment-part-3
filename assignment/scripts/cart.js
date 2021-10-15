@@ -28,11 +28,11 @@ console.log('The listed items are');
 listItems(basket);
 
 
-function empty(arr) {
-  arr.splice(0, arr.length);
-};//End Function
-console.log('This basket is now empty', empty(basket));
-console.log(basket);
+// function empty(arr) {
+//   arr.splice(0, arr.length);
+// };//End Function
+// console.log('This basket is now empty', empty(basket));
+// console.log(basket);
 
 
 //STRETCH
